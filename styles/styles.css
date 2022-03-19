@@ -7,6 +7,22 @@
     color: hsl(228, 45%, 44%);
 }
 
+.background {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url("images/bg-pattern-top-desktop.svg");
+}
+
+.layer2 {
+    background-image: url("images/bg-pattern-bottom-desktop.svg");
+}
+
 body {
     display: flex;
     align-items: center;
