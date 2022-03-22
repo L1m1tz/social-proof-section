@@ -7,23 +7,30 @@
     color: hsl(228, 45%, 44%);
 }
 
-.background {
-    aspect-ratio: 960/300;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
 .layer1 {
-    background-image: url("images/bg-pattern-top-desktop.svg");
+    position: absolute;
+    background-image: url('../images/bg-pattern-top-desktop');
+    background-repeat: no-repeat;
+    height: 60vh;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .layer2 {
-    background-image: url("images/bg-pattern-bottom-desktop.svg");
+    position: absolute;
+    background-image: url('../images/bg-pattern-bottom-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 70vh;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    
 }
 
 body {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,6 +46,7 @@ body {
 
 .card-top {
     display: flex;
+
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 40px;
@@ -70,7 +78,7 @@ body {
     align-items: center;
     margin: 10px;
     padding: 20px;
-   
+
 }
 
 .card-stars p {
@@ -110,6 +118,7 @@ p>img:last-child {
 .review-profile {
 
     display: grid;
+
     grid-template-columns: 0.8fr 2fr;
     grid-template-rows: auto;
     place-items: start;
@@ -140,7 +149,6 @@ p>img:last-child {
     width: 320px;
     margin-top: 10px;
     background-color: hsl(300, 43%, 22%);
-    border: 1px solid white;
     border-radius: 10px;
     padding: 30px;
     margin: 15px;
@@ -164,8 +172,17 @@ p>img:last-child {
         height: fit-content;
     }
 
+    .layer1 {
+       
+        background-image: url('../images/bg-pattern-top-mobile.svg');
+    }
+    .layer2 {   
+        background-image: url('../images/bg-pattern-top-mobile.svg');
+        
+    }
+
     .container {
-        border: 5px solid black;
+       
         display: flex;
         flex-flow: column wrap;
     }
@@ -219,7 +236,7 @@ p>img:last-child {
     }
 
     .review-profile {
-        border: 1px solid green;
+       
         display: grid;
         grid-template-columns: 0.8fr 2fr;
         grid-template-rows: auto;
@@ -232,6 +249,7 @@ p>img:last-child {
         margin-left: 2px;
         color: hsl(333, 80%, 67%);
     }
+
 
     #start {
         margin-bottom: 10px;
